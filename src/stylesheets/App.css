@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Tsukimi+Rounded:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-background: #202124;
+  --dark-color: #e8eaed;
+  --setting-color: rgba(241, 243, 244, 0.534);
+}
+
+.light {
+  --dark-background: rgb(255, 255, 255);;
+  --dark-color: #5f6368;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-background);
+  color: var(--dark-color);
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--setting-color);
+  padding: 10px 25px;
+}
+
+.navbar .keep-name {
+  display: inline-block;
+  font-size: 21px;
+}
+
+.logo-area {
+  width: 10%;
+}
+
+.logo-area, .setting-area{
+  padding: 10px 0;
+}
+
+.navbar .keep-logo {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.navbar .keep-name {
+  position: absolute;
+  left: 113px;
+  cursor: pointer;
+}
+
+.navbar .menu {
+  cursor: pointer;
+}
+
+.navbar form {
+  background: rgba(241,243,244,.24);
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-color);
+  font-size: 16px;
+}
+
+.search-icon {
+  margin: 0 10px;
+}
+
+.setting-area span {
+  margin-right: 30px;
+  color: var(--setting-color);
+}
+
+.app {
+  display: flex;
+}
+
+.body {
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 795px) {
+  .navbar form {
+    display: none;
+  }
+}
